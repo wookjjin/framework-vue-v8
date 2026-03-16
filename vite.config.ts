@@ -2,6 +2,8 @@ import { fileURLToPath, URL } from 'node:url'
 import ui from '@nuxt/ui/vite'
 import tailwindcss from '@tailwindcss/vite'
 import vue from '@vitejs/plugin-vue'
+import browserslist from 'browserslist'
+import { browserslistToTargets } from 'lightningcss'
 import { defineConfig } from 'vite'
 import { VueRouterAutoImports } from 'vue-router/unplugin'
 import VueRouter from 'vue-router/vite'
@@ -40,4 +42,13 @@ export default defineConfig({
     }),
     tailwindcss(),
   ],
+  css: {
+    transformer: 'lightningcss',
+    lightningcss: {
+      targets: browserslistToTargets(browserslist('>= 0.25%')),
+    },
+  },
+  build: {
+    cssMinify: 'lightningcss',
+  },
 })
