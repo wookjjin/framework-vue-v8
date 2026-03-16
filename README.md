@@ -1,6 +1,6 @@
-# 🚀 Vue Framework Vite7
+# 🚀 Vue Framework Vite v8
 
-최신 Vue 3 생태계의 정수만을 모은 고성능 관리자 웹 프레임워크입니다. **Vite 7**, **Tailwind v4**, **Vue Router v5**를 기반으로 하며, 강력한 타입 안정성과 개발 생산성을 목표로 설계되었습니다.
+최신 Vue 3 생태계의 정수만을 모은 고성능 관리자 웹 프레임워크입니다. **Vite 8**, **Tailwind v4**, **Vue Router v5**를 기반으로 하며, 강력한 타입 안정성과 개발 생산성을 목표로 설계되었습니다.
 
 
 ---
@@ -35,7 +35,7 @@ pnpm build (vue-tsc 실행 포함)
 
 ### Core
 - **Vue 3.5+**: 최신 반응성 엔진 및 Composition API (SFC)
-- **Vite 7**: 차세대 고속 번들러 및 빌드 도구
+- **Vite 8**: 차세대 고속 번들러 및 빌드 도구
 
 ### State & Data
 - **Pinia & Persistedstate**: 전역 상태 관리 및 브라우저 저장소 연동
@@ -87,7 +87,7 @@ pnpm build (vue-tsc 실행 포함)
 ├── .eslint.config.mjs  # @antfu/eslint-config 설정
 ├── tailwind.config.ts  # Tailwind CSS 4 설정
 ├── tsconfig.json       # @vue/tsconfig 기반 설정
-└── vite.config.ts      # Vite 7 + @tailwindcss/vite 설정
+└── vite.config.ts      # Vite 8 + @tailwindcss/vite 설정
 ```
 ---
 
@@ -141,7 +141,7 @@ export const useUserStore = defineStore('user', {
 ## ✨ Key Features
 
 - **Runtime**: [Vue 3.5](https://vuejs.org/) (Composition API, `<script setup>`)
-- **Build Tool**: [Vite 7](https://vitejs.dev/) (Next-gen bundling)
+- **Build Tool**: [Vite 8](https://vitejs.dev/) (Next-gen bundling)
 - **UI Framework**: [Nuxt UI 4](https://ui.nuxt.com/) & [Tailwind CSS 4](https://tailwindcss.com/)
 - **State Management**: [Pinia 3](https://pinia.vuejs.org/) (+ Persistedstate)
 - **Code Quality**: [@antfu/eslint-config](https://github.com/antfu/eslint-config) (Standardized Linting)
